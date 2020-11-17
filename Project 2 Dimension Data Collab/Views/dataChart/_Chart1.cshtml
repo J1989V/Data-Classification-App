@@ -1,0 +1,37 @@
+﻿
+
+
+
+<div>
+    <h1>Test</h1>
+    <canvas id="chart"></canvas>
+</div>
+
+<script>
+    //var x = Html.Raw.ViewBag//
+
+
+
+    var can = document.getElementById("chart");
+    var male = @ViewBag.male;
+    var female = @ViewBag.female;
+
+    var test = new Chart(can, {
+        type: "doughnut",
+        data: {
+            labels: ["Male", "Female"],
+            datasets: [{
+                data: [male, female],
+                backgroundColor: ["#333", "#000"]
+            }]
+        },
+        options: {
+            title: {
+                text: "Gender",
+                display :true
+            }
+        }
+    });
+
+
+</script>
