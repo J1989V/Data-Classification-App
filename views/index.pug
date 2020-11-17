@@ -1,0 +1,32 @@
+doctype html
+html
+    head
+        title Login
+        meta(http-equiv="content-type" content="text/html; charset=UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet" href="../public/stylesheets/normalize.css" type="text/css")
+        link(rel="stylesheet" href="../public/stylesheets/skeleton.css" type="text/css")
+        link(rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:400,300,600" type="text/css")
+        link(rel="apple-touch-icon" sizes="180x180" href="../public/images/apple-touch-icon.png")
+        link(rel="icon" type="image/png" sizes="32x32" href="../public/images/favicon-32x32.png")
+        link(rel="icon" type="image/png" sizes="16x16" href="../public/images/favicon-16x16.png")
+        link(rel="manifest" href="../public/images/site.webmanifest")
+    body
+        div(style="margin-top: 3rem; text-align: center" class="container")
+            div(class="row")
+                h1 POPI Act Data Classifier - Login
+                form(method="post" style="margin-top: 5rem")
+                    div(class="row")
+                        label(for="uname") Username
+                        input(type="text" placeholder="Username" name="uname" required)
+                    div(class="row")
+                        label(for="psw" required) Password
+                        input(type="password" placeholder="Password" name="psw" required)
+                    div(class="row")
+                        button(type="submit" class="button-primary") Login
+            div(class="row")   
+                if correctPassword === false
+                    h2 Incorrect username or password - Try again
+                if databaseError === true
+                    h2 Database error - Try again
+
