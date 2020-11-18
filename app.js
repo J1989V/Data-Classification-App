@@ -35,7 +35,7 @@ app.post('/login', function (req, res) {
 
   try {
     connection = mysql.createConnection({
-      host: 'db-mysql-ams3-89808-do-user-8090406-0.b.db.ondigitalocean.com',
+      host: 'popi-db-do-user-8330663-0.b.db.ondigitalocean.com',
       port: 25060,
       database: 'defaultdb',
       user: process.env.USERNAME,
