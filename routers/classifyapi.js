@@ -117,11 +117,17 @@ function writeMeta(fileType, fileName, json) {
             user: process.env.USERNAME,
             password: process.env.PASSWORD
         });
+
+        console.log('db connection set');
+        
         connection.connect(function (e) {
             if (e) {
                 console.error(e.name + ': ' + e.message + '\n\n\n' + e.stack);
             }
         });
+
+        console.log('db connected');
+        
         try {
             json.data.forEach((item, index) => {
                 for (key in item) { //key is your field_name
