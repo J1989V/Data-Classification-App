@@ -1,4 +1,4 @@
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/*! plain.css v3.0.2 | MIT License | git.io/plain */
 
 /**
  * 1. Set default font family to sans-serif.
@@ -48,7 +48,7 @@ summary {
 
 /**
  * 1. Correct `inline-block` display not defined in IE 8/9.
- * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ * 2. Plain vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
 
 audio,

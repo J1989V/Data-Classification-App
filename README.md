@@ -1,3 +1,3 @@
-# popi-classifier
+# Data-Classification-App
 
-This repo is being used for CMPG323's "project 2".
+This repository is for CMPG323 (Project 2)
