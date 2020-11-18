@@ -18,16 +18,16 @@
     "validator-sa": "^0.2.4",
     "xlsx": "^0.16.8"
   },
-  "description": "This repo is being used for CMPG323's \"project 2\".",
+  "description": "This repository is for Project 2",
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TimothyBrits/do-popi-classifier.git"
+    "url": "git+https://github.com/J1989V/WORK.git"
   },
-  "author": "Timothy Brits",
+  "author": "JV",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TimothyBrits/do-popi-classifier/issues"
+    "url": "https://github.com/J1989V/WORK/issues"
   },
-  "homepage": "https://github.com/TimothyBrits/do-popi-classifier#readme"
+  "homepage": "https://github.com/J1989V/WORK#readme"
 }
