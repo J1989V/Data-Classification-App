@@ -1,0 +1,39 @@
+doctype html
+html
+    head
+        title View DB
+        meta(http-equiv="content-type" content="text/html; charset=UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet" href="../public/stylesheets/normalize.css" type="text/css")
+        link(rel="stylesheet" href="../public/stylesheets/skeleton.css" type="text/css")
+        link(rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:400,300,600" type="text/css")
+        link(rel="apple-touch-icon" sizes="180x180" href="../public/images/apple-touch-icon.png")
+        link(rel="icon" type="image/png" sizes="32x32" href="../public/images/favicon-32x32.png")
+        link(rel="icon" type="image/png" sizes="16x16" href="../public/images/favicon-16x16.png")
+        link(rel="manifest" href="../public/images/site.webmanifest")
+    body
+        div(style="margin-top: 3rem; text-align: center" class="container")
+            div(class="row")
+                h1 POPI Act Data Classifier - Database View
+            div(class="row")
+                if databaseError === true
+                    h2 Couldn't connect to database - Try again
+                if query === true
+                    h2 Couldn't process query - Try Again
+            div(class="row")
+                table(class="u-full-width")
+                    thead
+                        tr
+                            th Datastore ID
+                            th Datastore Name
+                            th Datastore Type
+                            th Field Name
+                            th Category
+                    tbody
+                        each row in rows
+                            tr
+                                td #{row.datastore_id}
+                                td #{row.datastore_name}
+                                td #{row.datastore_type}
+                                td #{row.field_name}
+                                td #{row.category}
