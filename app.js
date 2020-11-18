@@ -38,8 +38,8 @@ app.post('/login', function (req, res) {
       host: 'popi-db-do-user-8330663-0.b.db.ondigitalocean.com',
       port: 25060,
       database: 'defaultdb',
-      user: process.env.USERNAME,
-      password: process.env.PASSWORD
+      user: 'doadmin',
+      password: 'zadszp92tgcfnkmd'
     });
     connection.connect(function (e) {
       if (e) {
